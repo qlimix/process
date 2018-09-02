@@ -4,7 +4,7 @@ namespace Qlimix\Process;
 
 use Qlimix\Process\Exception\ProcessException;
 use Qlimix\Process\Output\OutputInterface;
-use Qlimix\Queue\Consumer\Runtime\ControlInterface;
+use Qlimix\Process\Runtime\ControlInterface;
 
 interface ProcessInterface
 {
