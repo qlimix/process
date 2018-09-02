@@ -38,5 +38,4 @@ final class PcntlControl implements ControlInterface
     {
         $this->quit = true;
     }
-
 }
