@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Qlimix\Queue\Consumer\Runtime;
+namespace Qlimix\Process\Runtime;
 
 interface ControlInterface
 {

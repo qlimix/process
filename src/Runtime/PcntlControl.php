@@ -2,8 +2,6 @@
 
 namespace Qlimix\Process\Runtime;
 
-use Qlimix\Queue\Consumer\Runtime\ControlInterface;
-
 final class PcntlControl implements ControlInterface
 {
     /** @var bool */
