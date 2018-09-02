@@ -8,6 +8,7 @@ final class PcntlControl implements ControlInterface
 {
     /** @var bool */
     private $quit = false;
+
     /**
      * @inheritdoc
      */
