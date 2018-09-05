@@ -7,6 +7,4 @@ interface ControlInterface
     public function tick(): void;
 
     public function abort(): bool;
-
-    public function init(): void;
 }

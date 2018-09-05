@@ -23,9 +23,6 @@ final class PcntlControl implements ControlInterface
         return $this->quit;
     }
 
-    /**
-     * @inheritdoc
-     */
     public function init(): void
     {
         pcntl_signal(SIGHUP, [$this, 'signal']);
