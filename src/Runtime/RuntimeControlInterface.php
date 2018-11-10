@@ -2,7 +2,7 @@
 
 namespace Qlimix\Process\Runtime;
 
-interface ControlInterface
+interface RuntimeControlInterface
 {
     public function tick(): void;
 

@@ -4,15 +4,15 @@ namespace Qlimix\Process;
 
 use Qlimix\Process\Exception\ProcessException;
 use Qlimix\Process\Output\OutputInterface;
-use Qlimix\Process\Runtime\ControlInterface;
+use Qlimix\Process\Runtime\RuntimeControlInterface;
 
 interface ProcessInterface
 {
     /**
-     * @param ControlInterface $control
+     * @param RuntimeControlInterface $control
      * @param OutputInterface $output
      *
      * @throws ProcessException
      */
-    public function run(ControlInterface $control, OutputInterface $output): void;
+    public function run(RuntimeControlInterface $control, OutputInterface $output): void;
 }

@@ -2,7 +2,7 @@
 
 namespace Qlimix\Process\Runtime;
 
-final class PcntlControl implements ControlInterface
+final class PcntlRuntimeControl implements RuntimeControlInterface
 {
     /** @var bool */
     private $quit = false;
