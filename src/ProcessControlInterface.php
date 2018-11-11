@@ -2,12 +2,16 @@
 
 namespace Qlimix\Process;
 
+use Qlimix\Process\Exception\ProcessException;
+
 interface ProcessControlInterface
 {
     /**
      * returns a pid that exited/returned if any
      *
      * @return int|null
+     *
+     * @throws ProcessException
      */
     public function status(): ?int;
 
