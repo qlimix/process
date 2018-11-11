@@ -36,11 +36,11 @@ interface ProcessControlInterface
     /**
      * @param ProcessInterface[] $processes
      *
-     * @return int
+     * @return int[]
      *
      * @throws ProcessException
      */
-    public function startProcesses(array $processes): int;
+    public function startProcesses(array $processes): array;
 
     /**
      * @param int $pid
