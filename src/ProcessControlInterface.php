@@ -53,4 +53,9 @@ interface ProcessControlInterface
      * @throws ProcessException
      */
     public function stopProcesses(): void;
+
+    /**
+     * @throws ProcessException
+     */
+    public function normalExit(int $pid): bool;
 }
