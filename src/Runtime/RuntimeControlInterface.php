@@ -7,4 +7,6 @@ interface RuntimeControlInterface
     public function tick(): void;
 
     public function abort(): bool;
+
+    public function quit(): void;
 }
