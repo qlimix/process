@@ -13,19 +13,11 @@ interface ProcessControlInterface
     public function status(): ?ExitedProcess;
 
     /**
-     * @param int $pid
-     *
-     * @return bool
-     *
      * @throws ProcessException
      */
     public function isProcessRunning(int $pid): bool;
 
     /**
-     * @param ProcessInterface $process
-     *
-     * @return int
-     *
      * @throws ProcessException
      */
     public function startProcess(ProcessInterface $process): int;
@@ -40,8 +32,6 @@ interface ProcessControlInterface
     public function startProcesses(array $processes): array;
 
     /**
-     * @param int $pid
-     *
      * @throws ProcessException
      */
     public function stopProcess(int $pid): void;

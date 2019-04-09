@@ -2,6 +2,8 @@
 
 namespace Qlimix\Process\Output;
 
+use const PHP_EOL;
+
 final class StdOutput implements OutputInterface
 {
     /**

@@ -9,9 +9,6 @@ use Qlimix\Process\Runtime\RuntimeControlInterface;
 interface ProcessInterface
 {
     /**
-     * @param RuntimeControlInterface $control
-     * @param OutputInterface $output
-     *
      * @throws ProcessException
      */
     public function run(RuntimeControlInterface $control, OutputInterface $output): void;
