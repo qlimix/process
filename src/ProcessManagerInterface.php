@@ -14,4 +14,9 @@ interface ProcessManagerInterface
     public function stop(): void;
 
     public function continue(): bool;
+
+    /**
+     * @throws ProcessException
+     */
+    public function initialize(): void;
 }
