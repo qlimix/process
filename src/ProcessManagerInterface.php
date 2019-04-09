@@ -9,5 +9,9 @@ interface ProcessManagerInterface
     /**
      * @throws ProcessException
      */
-    public function run(): void;
+    public function maintain(): void;
+
+    public function stop(): void;
+
+    public function continue(): bool;
 }
