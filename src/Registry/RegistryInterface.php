@@ -4,9 +4,13 @@ namespace Qlimix\Process\Registry;
 
 use Countable;
 use Qlimix\Process\ProcessInterface;
+use Qlimix\Process\Registry\Exception\NotFoundException;
 
 interface RegistryInterface extends Countable
 {
+    /**
+     * @throws NotFoundException
+     */
     public function remove(int $processId): int;
 
     public function has(int $registryId): bool;
@@ -16,6 +20,9 @@ interface RegistryInterface extends Countable
      */
     public function add($registryId, ProcessInterface $process): int;
 
+    /**
+     * @throws NotFoundException
+     */
     public function get(int $registryId): RegisteredProcess;
 
     /**
