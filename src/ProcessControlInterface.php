@@ -15,7 +15,7 @@ interface ProcessControlInterface
     /**
      * @throws ProcessException
      */
-    public function isProcessRunning(int $pid): bool;
+    public function isProcessRunning(int $id): bool;
 
     /**
      * @throws ProcessException
@@ -34,7 +34,7 @@ interface ProcessControlInterface
     /**
      * @throws ProcessException
      */
-    public function stopProcess(int $pid): void;
+    public function stopProcess(int $id): void;
 
     /**
      * @throws ProcessException

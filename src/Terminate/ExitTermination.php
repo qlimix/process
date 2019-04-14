@@ -9,7 +9,7 @@ final class ExitTermination implements TerminationInterface
      */
     public function success(): void
     {
-        exit(1);
+        exit(0);
     }
 
     /**
