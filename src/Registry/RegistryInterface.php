@@ -11,7 +11,7 @@ interface RegistryInterface extends Countable
     /**
      * @throws NotFoundException
      */
-    public function remove(int $processId): int;
+    public function remove(int $processId): RegisteredProcess;
 
     public function has(int $registryId): bool;
 
