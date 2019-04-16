@@ -3,13 +3,14 @@
 namespace Qlimix\Process;
 
 use Qlimix\Process\Exception\ProcessException;
+use Qlimix\Process\Result\ExitedProcess;
 
 interface ProcessControlInterface
 {
     /**
      * @throws ProcessException
      */
-    public function status(): ?bool;
+    public function status(): ?ExitedProcess;
 
     /**
      * @throws ProcessException
