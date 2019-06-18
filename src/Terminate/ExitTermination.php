@@ -5,6 +5,7 @@ namespace Qlimix\Process\Terminate;
 final class ExitTermination implements TerminationInterface
 {
     /**
+     * @SuppressWarnings("ExitExpression")
      * @inheritDoc
      */
     public function success(): void
@@ -13,6 +14,7 @@ final class ExitTermination implements TerminationInterface
     }
 
     /**
+     * @SuppressWarnings("ExitExpression")
      * @inheritDoc
      */
     public function fail(): void
