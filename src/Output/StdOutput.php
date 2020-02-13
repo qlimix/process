@@ -11,6 +11,14 @@ final class StdOutput implements OutputInterface
      */
     public function write(string $text): void
     {
+        echo $text;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function writeLine(string $text): void
+    {
         echo $text.PHP_EOL;
     }
 }

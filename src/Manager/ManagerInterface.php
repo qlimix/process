@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace Qlimix\Process;
+namespace Qlimix\Process\Manager;
 
-use Qlimix\Process\Exception\ProcessException;
+use Qlimix\Process\Manager\Exception\ManagerException;
 
-interface ProcessManagerInterface
+interface ManagerInterface
 {
     /**
-     * @throws ProcessException
+     * @throws ManagerException
      */
     public function maintain(): void;
 
@@ -16,7 +16,7 @@ interface ProcessManagerInterface
     public function continue(): bool;
 
     /**
-     * @throws ProcessException
+     * @throws ManagerException
      */
     public function initialize(): void;
 }
