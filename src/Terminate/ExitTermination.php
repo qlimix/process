@@ -17,8 +17,8 @@ final class ExitTermination implements TerminationInterface
      * @SuppressWarnings("ExitExpression")
      * @inheritDoc
      */
-    public function fail(): void
+    public function fail(int $code): void
     {
-        exit(1);
+        exit($code);
     }
 }

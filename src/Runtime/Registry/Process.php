@@ -1,24 +1,20 @@
 <?php declare(strict_types=1);
 
-namespace Qlimix\Process\Registry;
+namespace Qlimix\Process\Runtime\Registry;
 
-use Qlimix\Process\ProcessInterface;
-
-final class RegisteredProcess
+final class Process
 {
-    /** @var int */
-    private $registryId;
+    private int $registryId;
 
     /** @var mixed */
     private $processId;
 
-    /** @var ProcessInterface */
-    private $process;
+    private string $process;
 
     /**
      * @param mixed $processId
      */
-    public function __construct(int $registryId, $processId, ProcessInterface $process)
+    public function __construct(int $registryId, $processId, string $process)
     {
         $this->registryId = $registryId;
         $this->processId = $processId;
@@ -38,7 +34,7 @@ final class RegisteredProcess
         return $this->processId;
     }
 
-    public function getProcess(): ProcessInterface
+    public function getProcess(): string
     {
         return $this->process;
     }

@@ -8,5 +8,5 @@ interface RuntimeControlInterface
 
     public function abort(): bool;
 
-    public function quit(): void;
+    public function quit(Reason $reason): void;
 }

@@ -4,8 +4,7 @@
     "description": "Process control interfaces",
     "license": "MIT",
     "keywords": [
-        "process",
-        "manager"
+        "process"
     ],
     "authors": [
         {
@@ -13,15 +12,23 @@
             "email": "frank@qlimix.net"
         }
     ],
+    "require": {
+        "php": ">7.4"
+    },
+    "require-dev": {
+        "qlimix/code-standard": "^3.0"
+    },
     "autoload": {
         "psr-4": {
             "Qlimix\\Process\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Qlimix\\Tests\\Process\\": "tests/"
+        }
+    },
     "config": {
         "sort-packages": true
-    },
-    "require-dev": {
-        "qlimix/code-standard": "^1.0"
     }
 }

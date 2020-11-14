@@ -6,5 +6,5 @@ interface TerminationInterface
 {
     public function success(): void;
 
-    public function fail(): void;
+    public function fail(int $code): void;
 }
