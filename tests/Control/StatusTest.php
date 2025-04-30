@@ -15,8 +15,8 @@ final class StatusTest extends TestCase
 
         $status = new Status($id, $process, $success);
 
-        $this->assertSame($id, $status->getId());
-        $this->assertSame($process, $status->getProcess());
-        $this->assertSame($success, $status->isSuccess());
+        $this->assertSame($id, $status->id);
+        $this->assertSame($process, $status->process);
+        $this->assertSame($success, $status->success);
     }
 }

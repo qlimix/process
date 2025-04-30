@@ -9,7 +9,6 @@ final class Registry implements RegistryInterface
 {
     /** @var Process[] */
     private array $processes = [];
-
     private int $id = 0;
 
     /**
@@ -26,7 +25,7 @@ final class Registry implements RegistryInterface
     public function remove(int $processId): Process
     {
         foreach ($this->processes as $index => $process) {
-            if ($process->getProcessId() === $processId) {
+            if ($process->processId === $processId) {
                 unset($this->processes[$index]);
 
                 return $process;
@@ -39,7 +38,7 @@ final class Registry implements RegistryInterface
     /**
      * @inheritDoc
      */
-    public function add($processId, string $process): int
+    public function add(mixed $processId, string $process): int
     {
         $this->id++;
         $this->processes[] = new Process($this->id, $processId, $process);
@@ -53,7 +52,7 @@ final class Registry implements RegistryInterface
     public function get(int $registryId): Process
     {
         foreach ($this->processes as $process) {
-            if ($process->getRegistryId() === $registryId) {
+            if ($process->registryId === $registryId) {
                 return $process;
             }
         }
