@@ -15,8 +15,8 @@ final class ProcessTest extends TestCase
 
         $process = new Process($registryId, $processId, $processTest);
 
-        $this->assertSame($registryId, $process->getRegistryId());
-        $this->assertSame($processId, $process->getProcessId());
-        $this->assertSame($processTest, $process->getProcess());
+        $this->assertSame($registryId, $process->registryId);
+        $this->assertSame($processId, $process->processId);
+        $this->assertSame($processTest, $process->process);
     }
 }

@@ -2,40 +2,12 @@
 
 namespace Qlimix\Process\Runtime\Registry;
 
-final class Process
+final readonly class Process
 {
-    private int $registryId;
-
-    /** @var mixed */
-    private $processId;
-
-    private string $process;
-
-    /**
-     * @param mixed $processId
-     */
-    public function __construct(int $registryId, $processId, string $process)
-    {
-        $this->registryId = $registryId;
-        $this->processId = $processId;
-        $this->process = $process;
-    }
-
-    public function getRegistryId(): int
-    {
-        return $this->registryId;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getProcessId()
-    {
-        return $this->processId;
-    }
-
-    public function getProcess(): string
-    {
-        return $this->process;
+    public function __construct(
+        public int $registryId,
+        public mixed $processId,
+        public string $process
+    ) {
     }
 }

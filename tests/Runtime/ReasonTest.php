@@ -13,7 +13,7 @@ final class ReasonTest extends TestCase
         $foo = 'foo';
         $reason = new Reason($foo);
 
-        $this->assertSame($foo, $reason->getMessage());
+        $this->assertSame($foo, $reason->message);
     }
 
     public function testShouldReasonFromException(): void
@@ -21,6 +21,6 @@ final class ReasonTest extends TestCase
         $exception = new Exception();
         $reason = Reason::fromException($exception);
 
-        $this->assertSame((string) $exception, $reason->getMessage());
+        $this->assertSame((string) $exception, $reason->message);
     }
 }

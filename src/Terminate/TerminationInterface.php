@@ -4,7 +4,7 @@ namespace Qlimix\Process\Terminate;
 
 interface TerminationInterface
 {
-    public function success(): void;
+    public function success(): never;
 
-    public function fail(int $code): void;
+    public function fail(int $code): never;
 }

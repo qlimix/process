@@ -25,9 +25,9 @@ final class RegistryTest extends TestCase
         $this->assertCount(1, $this->registry);
         $process = $this->registry->get($registryId);
 
-        $this->assertSame($registryId, $process->getRegistryId());
-        $this->assertSame($processId, $process->getProcessId());
-        $this->assertSame(self::PROCESS, $process->getProcess());
+        $this->assertSame($registryId, $process->registryId);
+        $this->assertSame($processId, $process->processId);
+        $this->assertSame(self::PROCESS, $process->process);
     }
 
     public function testShouldRemove(): void
@@ -62,9 +62,9 @@ final class RegistryTest extends TestCase
         $all = $this->registry->getAll();
         $this->assertCount(3, $all);
         foreach ($all as $index => $item) {
-            $this->assertSame($registryIds[$index], $item->getRegistryId());
-            $this->assertSame($index, $item->getProcessId());
-            $this->assertSame($item->getProcess(), self::PROCESS);
+            $this->assertSame($registryIds[$index], $item->registryId);
+            $this->assertSame($index, $item->processId);
+            $this->assertSame($item->process, self::PROCESS);
         }
     }
 }

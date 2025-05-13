@@ -7,15 +7,12 @@ use Qlimix\Process\Runtime\Registry\Exception\NotFoundException;
 
 interface RegistryInterface extends Countable
 {
+    public function add(mixed $processId, string $process): int;
+
     /**
      * @throws NotFoundException
      */
     public function remove(int $processId): Process;
-
-    /**
-     * @param mixed $processId
-     */
-    public function add($processId, string $process): int;
 
     /**
      * @throws NotFoundException
