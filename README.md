@@ -1,5 +1,7 @@
 # Process
 
+> **Archived:** this package is no longer maintained.
+
 [![Travis CI](https://api.travis-ci.org/qlimix/process.svg?branch=master)](https://travis-ci.org/qlimix/process)
 [![Coveralls](https://img.shields.io/coveralls/github/qlimix/process.svg)](https://coveralls.io/github/qlimix/process)
 [![Packagist](https://img.shields.io/packagist/v/qlimix/process.svg)](https://packagist.org/packages/qlimix/process)
